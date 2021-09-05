@@ -1,0 +1,6 @@
+﻿Каждый раз, когда SQL-запрос может запуститься, но ожидает другого ресурса — он записывает сведения о причине задержки. Доступ к ним можно получить через представление [sys.dm_os_wait_stats](https://docs.microsoft.com/ru-ru/sql/relational-databases/system-dynamic-management-views/sys-dm-os-wait-stats-transact-sql).
+
+Для анализа представления можно использовать готовые скрипты:
+
+- [Скрипт](causes_of_wait_times.txt) из статьи Яна Стерка «Открытие скрытых данных для оптимизации производительности приложений», опубликованной в MSDN Magazine ещё в [2008-м](https://msdn.microsoft.com/ru-ru/magazine/ee310108.aspx) году. Выводит список типов задержки, упорядоченный по времени — от самых частотных до наиболее редких.
+- [Cкрипт](sql_server_wait_statistics.txt) из [статьи](https://www.sqlskills.com/blogs/paul/wait-statistics-or-please-tell-me-where-it-hurts/) Пола Рэндала про анализ причин задержек в работе сервера MS SQL (на Хабре, кстати, есть [перевод](https://habr.com/ru/post/216309/)). Фильтрует задержки, которые возникают на сервере всегда и которые обычно можно игнорировать. Кроме того, к каждой задержке добавляется ссылка на страницу, где эта задержка детально описана (например, вот [описание](https://www.sqlskills.com/help/waits/cxpacket) CXPACKET).
