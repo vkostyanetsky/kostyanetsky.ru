@@ -40,7 +40,7 @@ jobs:
 
       - name: Build blog2
         run: ls
-        working-directory: /home/runner/work/data.kostyanetsky.ru
+        working-directory: /home/runner/work/data.kostyanetsky.ru/data.kostyanetsky.ru
 
       - name: Build blog
         run: python ./BlogBuilder/builder.py --input ./data.kostyanetsky.ru --output ./kostyanetsky.ru --config ./data.kostyanetsky.ru/config.yaml
