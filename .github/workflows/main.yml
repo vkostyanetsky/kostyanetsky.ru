@@ -36,3 +36,4 @@ jobs:
     
       - name: Where
         run: ls
+        working-directory: /home/runner/work
