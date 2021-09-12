@@ -39,5 +39,5 @@ jobs:
         working-directory: /home/runner/work
           
       - name: Build blog
-        run: python .\BlogBuilder/builder.py --input ./data.kostyanetsky.ru --output ./kostyanetsky.ru --config ./data.kostyanetsky.ru/config.yaml
+        run: python ./BlogBuilder/builder.py --input ./data.kostyanetsky.ru --output ./kostyanetsky.ru --config ./data.kostyanetsky.ru/config.yaml
         working-directory: /home/runner/work
