@@ -33,29 +33,6 @@ jobs:
           mkdir output
           git clone "https://${{ secrets.ACCESS_TOKEN }}@github.com/vkostyanetsky/kostyanetsky.ru.git" --branch master --single-branch ./kostyanetsky.ru
         working-directory: /home/runner/work
-          
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r ./BlogBuilder/requirements.txt
-        working-directory: /home/runner/work
-          
-      - name: Build blog
-        run: python .\builder/builder.py --input ./input --output ./output --config .\input/config.yaml
-        working-directory: /home/runner/work
-        
-      - name: Set git config and add changes
-        run: |
-          git config --global user.email "${GITHUB_ACTOR}@https://users.noreply.github.com/"
-          git config --global user.name "${GITHUB_ACTOR}"
-          git add --all        
-        working-directory: /home/runner/work/kostyanetsky.ru
-        
-      - name: Push and send notification
-        run: |
-          COMMIT_MESSAGE="Update static on $(date +'%Y-%m-%d %H:%M:%S')"
-          git diff-index --quiet --cached HEAD -- && echo "No changes!" && exit 0 || echo $COMMIT_MESSAGE
-          git commit -m "${COMMIT_MESSAGE}"
-          git push https://${{ secrets.ACCESS_TOKEN }}@github.com/${GITHUB_ACTOR}/kostyanetsky.ru.git master
-          curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage?text=$COMMIT_MESSAGE&chat_id=${{ secrets.TELEGRAM_CHAT_ID }}"
-        working-directory: /home/runner/work/kostyanetsky.ru
+    
+      - name: Where
+        run: ls
