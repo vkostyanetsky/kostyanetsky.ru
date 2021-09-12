@@ -1,4 +1,4 @@
-name: Build
+name: Build & Deploy
 
 on:
   push:
@@ -46,7 +46,7 @@ jobs:
           pip install -r ./builder/requirements.txt
           
       - name: Build blog
-        run: python .\builder/builder.py --input ./input --output ./output --config ./input/config.yaml
+        run: python .\builder/builder.py --input ./input --output ./output --config .\input/config.yaml
         
       - name: Set git config and add changes
         run: |
