@@ -43,11 +43,17 @@ jobs:
           git add --all        
         working-directory: project
         
-      - name: Push and send notification
+      - name: Commit and push
         run: |
-          COMMIT_MESSAGE="Update static on $(date +'%Y-%m-%d %H:%M:%S')"
+          COMMIT_MESSAGE="Update at $(date +'%Y-%m-%d %H:%M:%S')"          
           git diff-index --quiet --cached HEAD -- && echo "No changes!" && exit 0 || echo $COMMIT_MESSAGE
           git commit -m "${COMMIT_MESSAGE}"
           git push
-          curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage?text=$COMMIT_MESSAGE&chat_id=${{ secrets.TELEGRAM_CHAT_ID }}"
+          TELEGRAM_MESSAGE = "Статика на kostyanetsky.ru успешно обновлена!"
+          curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage?text=$TELEGRAM_MESSAGE&chat_id=${{ secrets.TELEGRAM_CHAT_ID }}"
         working-directory: project
+
+      - name: Notify
+        run: |
+          TELEGRAM_MESSAGE = "Статика на kostyanetsky.ru успешно обновлена!"
+          curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage?text=$TELEGRAM_MESSAGE&chat_id=${{ secrets.TELEGRAM_CHAT_ID }}"
