@@ -48,6 +48,6 @@ jobs:
           COMMIT_MESSAGE="Update static on $(date +'%Y-%m-%d %H:%M:%S')"
           git diff-index --quiet --cached HEAD -- && echo "No changes!" && exit 0 || echo $COMMIT_MESSAGE
           git commit -m "${COMMIT_MESSAGE}"
-          git push master
+          git push
           curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage?text=$COMMIT_MESSAGE&chat_id=${{ secrets.TELEGRAM_CHAT_ID }}"
         working-directory: project
