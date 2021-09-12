@@ -22,16 +22,13 @@ jobs:
         with:
           python-version: 3.9
 
-      - name: pwd
-        run: pwd
+      - name: Clone BlogBuilder repository
+        run: |
+          git clone "https://${{ secrets.ACCESS_TOKEN }}@github.com/vkostyanetsky/BlogBuilder.git" --branch main --single-branch builder
+                
+      - name: Clone kostyanetsky.ru repository
+        run: |
+          git clone "https://${{ secrets.ACCESS_TOKEN }}@github.com/vkostyanetsky/kostyanetsky.ru.git" --branch master --single-branch output
 
-      - name: ls1
+      - name: ls
         run: ls
-
-      - name: ls2
-        run: ls
-        working-directory: /home/runner/work/
-
-      - name: ls3
-        run: ls
-        working-directory: /home/runner/work/data.kostyanetsky.ru/
