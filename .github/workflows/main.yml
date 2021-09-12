@@ -21,24 +21,18 @@ jobs:
         uses: actions/setup-python@v1
         with:
           python-version: 3.9
-          
-      - name: Make builder folder
-        run: mkdir builder
-        
+
       - name: Clone BlogBuilder repository
-        run: git clone "https://${{ secrets.ACCESS_TOKEN }}@github.com/vkostyanetsky/BlogBuilder.git" --branch main --single-branch ./builder
-
-      - name: Make input folder
-        run: mkdir input
-        
-      - name: Clone data repository
-        run: git clone "https://${{ secrets.ACCESS_TOKEN }}@github.com/vkostyanetsky/data.kostyanetsky.ru.git" --branch main --single-branch ./input
-
-      - name: Make target folder
-        run: mkdir output
-        
-      - name: Clone target repository
-        run: git clone "https://${{ secrets.ACCESS_TOKEN }}@github.com/vkostyanetsky/kostyanetsky.ru.git" --branch master --single-branch ./output
+        run: |
+          mkdir BlogBuilder
+          git clone "https://${{ secrets.ACCESS_TOKEN }}@github.com/vkostyanetsky/BlogBuilder.git" --branch main --single-branch ./BlogBuilder
+        working-directory: /home/runner/work
+                
+      - name: Clone kostyanetsky.ru repository
+        run: |
+          mkdir output
+          git clone "https://${{ secrets.ACCESS_TOKEN }}@github.com/vkostyanetsky/kostyanetsky.ru.git" --branch master --single-branch ./kostyanetsky.ru
+        working-directory: /home/runner/work
           
       - name: Install dependencies
         run: |
@@ -47,13 +41,14 @@ jobs:
           
       - name: Build blog
         run: python .\builder/builder.py --input ./input --output ./output --config .\input/config.yaml
+        working-directory: /home/runner/work
         
       - name: Set git config and add changes
         run: |
           git config --global user.email "${GITHUB_ACTOR}@https://users.noreply.github.com/"
           git config --global user.name "${GITHUB_ACTOR}"
           git add --all        
-        working-directory: ./output
+        working-directory: /home/runner/work/kostyanetsky.ru
         
       - name: Push and send notification
         run: |
@@ -62,4 +57,4 @@ jobs:
           git commit -m "${COMMIT_MESSAGE}"
           git push https://${{ secrets.ACCESS_TOKEN }}@github.com/${GITHUB_ACTOR}/kostyanetsky.ru.git master
           curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage?text=$COMMIT_MESSAGE&chat_id=${{ secrets.TELEGRAM_CHAT_ID }}"
-        working-directory: ./output
+        working-directory: /home/runner/work/kostyanetsky.ru
