@@ -1,1 +1,0 @@
-grep -r --include "*.log" ',EXCP,' > GrepExceptions.sh.txt
