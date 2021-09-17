@@ -2,7 +2,7 @@
 
 На волне актуальных новостей наткнулся на трёхлетней давности ролик от SpaceX с подборкой неудачных приземлений на плавучую платформу. Как по мне — отличный пример того, как нужно относиться к своим ошибкам. С юмором!
 
-> Well, technically, it did land... Just not in one piece.
+> Well, technically, it did land… Just not in one piece.
 
 :D
 
