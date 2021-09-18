@@ -6,4 +6,4 @@
 
 ## Как это работает?
 
-[GitHub Action](/.github/workflows/main.yml) собирает блог с помощью самописного [генератора](https://github.com/vkostyanetsky/BlogBuilder) на Python.
+[GitHub Action](/.github/workflows/main.yml) создает статику для блога с помощью самописного [генератора](https://github.com/vkostyanetsky/BlogBuilder) на Python.
