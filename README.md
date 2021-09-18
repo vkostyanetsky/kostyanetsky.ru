@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Страницы, заметки и вспомогательные данные для моего [сайта](https://kostyanetsky.ru).
+Страницы, заметки и другие данные для моего [блога](https://kostyanetsky.ru).
 
 ## Как это работает?
 
