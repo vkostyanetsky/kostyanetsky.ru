@@ -6,4 +6,4 @@
 
 ## Как это работает?
 
-Сборку делает [GitHub Action](/.github/workflows/main.yml) с помощью самописного [генератора](https://github.com/vkostyanetsky/BlogBuilder). Результат отправляется в отдельный [репозиторий](https://github.com/vkostyanetsky/kostyanetsky.ru-static), к которому подключен GitHub Pages.
+Сборку сайта делает [GitHub Action](/.github/workflows/main.yml) с помощью самописного [генератора](https://github.com/vkostyanetsky/BlogBuilder).
