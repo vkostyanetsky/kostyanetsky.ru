@@ -6,4 +6,4 @@
 
 ## Как это работает?
 
-Сборку сайта делает [GitHub Action](/.github/workflows/main.yml) с помощью самописного [генератора](https://github.com/vkostyanetsky/BlogBuilder).
+Сборку сайта делает [GitHub Action](/.github/workflows/main.yml) с помощью самописного [генератора](https://github.com/vkostyanetsky/BlogBuilder) на Python.
