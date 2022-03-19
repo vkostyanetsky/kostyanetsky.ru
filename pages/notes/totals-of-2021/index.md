@@ -10,6 +10,6 @@
 
 Пойду для начала пробегусь километров десять, вот что!
 
-https://twitter.com/EffinBirds/status/1329575199667347459
+[![Твит](snap-tweet-EffinBirds-1329575199667347459.png)](https://twitter.com/EffinBirds/status/1329575199667347459)
 
 Возможно, птичка, возможно.
