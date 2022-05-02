@@ -1,5 +1,5 @@
-url:                    http://localhost/kostyanetsky.ru
+url:                    http://localhost:8000
 language_code:          ru
-mirror_url:             http://localhost/kostyanetsky.me
+mirror_url:             https://kostyanetsky.me
 mirror_language_code:   en
 github_repository:      vkostyanetsky/kostyanetsky.ru
