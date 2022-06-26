@@ -1,6 +1,6 @@
 # kostyanetsky.ru
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Workflow](https://github.com/vkostyanetsky/kostyanetsky.me/actions/workflows/main.yml/badge.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Здесь хранятся страницы, заметки и другие данные для моего [блога](https://kostyanetsky.ru).
 
