@@ -12,6 +12,8 @@
 
 Веб-интерфейс платформы использовать было нельзя из соображений экономии лицензий. Поэтому я написал веб-приложение на React.js, которое работает с базой 1С:Предприятия через специально разработанный для этого REST-интерфейс.
 
+Упрощенную версию проекта можно [посмотреть](https://github.com/vkostyanetsky/RFQ) на GitHub'е.
+
 ## Сборщик курсов валют с сайта ЦБ ОАЭ
 
 <span class="f6 link br3 ph3 pv1 mb2 dib blue bg-lightest-blue">1С:Предприятие</span> <span class="f6 link br3 ph3 pv1 mb2 dib blue bg-lightest-blue">Flask</span> <span class="f6 link br3 ph3 pv1 mb2 dib blue bg-lightest-blue">MongoDB</span>
@@ -22,4 +24,4 @@
 
 Поэтому я написал консольное приложение на пайтоне, которые регулярно загружает публикуемые курсы валют в свою базу данных и отдает через REST-сервис. Мы развернули это приложение на своей площадке, а в FirstBit ERP я добавил только регулярные обращения к сервису.
 
-Код серверной проекта можно [посмотреть](https://github.com/vkostyanetsky/CurrencyRatesCrawler) на GitHub'е.
+Код серверной части проекта можно [посмотреть](https://github.com/vkostyanetsky/CurrencyRatesCrawler) на GitHub'е.
