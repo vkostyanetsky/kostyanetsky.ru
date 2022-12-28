@@ -55,6 +55,6 @@ jobs:
           git diff-index --quiet --cached HEAD -- && echo "No changes!" && exit 0 || echo $COMMIT_MESSAGE
           git commit -m "${COMMIT_MESSAGE}"
           git push
-          TELEGRAM_MESSAGE="You have successfully updated kostyanetsky.ru!"
+          TELEGRAM_MESSAGE="You%20have%20successfully%20updated%20kostyanetsky.ru%21"
           curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage?text=$TELEGRAM_MESSAGE&chat_id=${{ secrets.TELEGRAM_CHAT_ID }}"
         working-directory: static
