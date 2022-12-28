@@ -14,8 +14,8 @@ jobs:
 
       - name: Tell something
         run: |
-          TELEGRAM_MESSAGE="111"
-          curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage?text=$TELEGRAM_MESSAGE&chat_id=${{ secrets.TELEGRAM_CHAT_ID }}"
+          TELEGRAM_MESSAGE="You have successfully updated kostyanetsky.ru!"
+          curl --data-urlencode "text=$TELEGRAM_MESSAGE" --data-urlencode="chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage"
 
       - name: Tell something
         run: |
