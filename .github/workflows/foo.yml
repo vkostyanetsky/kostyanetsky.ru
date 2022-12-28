@@ -13,9 +13,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Tell something
-        run: |
-          TELEGRAM_MESSAGE="You have successfully updated kostyanetsky.ru!"
-          "curl 'https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage?text=$TELEGRAM_MESSAGE&chat_id=${{ secrets.TELEGRAM_CHAT_ID }}'"
+        run: curl 'https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage?text=111&chat_id=${{ secrets.TELEGRAM_CHAT_ID }}'
 
       - name: Tell something
         run: |
