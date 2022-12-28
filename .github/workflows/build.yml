@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: 3.9
 
-      - name: Clone builder repository
+      - name: Clone bloget repository
         run: git clone "https://${{ secrets.ACCESS_TOKEN }}@github.com/vkostyanetsky/Bloget.git" --branch main --single-branch bloget
 
       - name: Install Python dependencies
@@ -35,8 +35,12 @@ jobs:
       - name: Clone skin repository
         run: git clone "https://${{ secrets.ACCESS_TOKEN }}@github.com/vkostyanetsky/kostyanetsky.xx-skin.git" --branch main --single-branch skin
 
+      - name: Install bloget
+        run: pip install -e .
+        working-directory: bloget
+
       - name: Generate static pages
-        run: python ../bloget/bloget/__main__.py build --output=static --skin=skin --url=https://kostyanetsky.ru
+        run: bloget build --output=static --skin=skin --url=https://kostyanetsky.ru
         working-directory: static
 
       - name: Set git config and add changes
