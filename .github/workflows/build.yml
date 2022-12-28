@@ -41,7 +41,6 @@ jobs:
 
       - name: Generate static pages
         run: bloget build --output=static --skin=skin --url=https://kostyanetsky.ru
-        working-directory: static
 
       - name: Set git config and add changes
         run: |
