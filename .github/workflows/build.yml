@@ -36,7 +36,7 @@ jobs:
         run: git clone "https://${{ secrets.ACCESS_TOKEN }}@github.com/vkostyanetsky/kostyanetsky.xx-skin.git" --branch main --single-branch skin
 
       - name: Generate static pages
-        run: python bloget/__main__.py build --output=static --skin=skin --url=https://kostyanetsky.
+        run: python ./bloget/bloget/__main__.py build --output=static --skin=skin --url=https://kostyanetsky.
         working-directory: static
 
       - name: Set git config and add changes
