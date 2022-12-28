@@ -56,6 +56,5 @@ jobs:
           git commit -m "${COMMIT_MESSAGE}"
           git push
           TELEGRAM_MESSAGE="You have successfully updated kostyanetsky.ru!"
-          echo "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage?text=$TELEGRAM_MESSAGE&chat_id=${{ secrets.TELEGRAM_CHAT_ID }}"
           curl "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage?text=$TELEGRAM_MESSAGE&chat_id=${{ secrets.TELEGRAM_CHAT_ID }}"
         working-directory: static
