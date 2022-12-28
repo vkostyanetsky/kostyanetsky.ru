@@ -2,10 +2,9 @@ name: Build & Deploy
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
-    
   workflow_dispatch:
 
 jobs:
@@ -23,25 +22,29 @@ jobs:
           python-version: 3.9
 
       - name: Clone builder repository
-        run: git clone "https://${{ secrets.ACCESS_TOKEN }}@github.com/vkostyanetsky/BlogBuilder.git" --branch main --single-branch builder
+        run: git clone "https://${{ secrets.ACCESS_TOKEN }}@github.com/vkostyanetsky/Bloget.git" --branch main --single-branch bloget
 
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r builder/requirements.txt
 
-      - name: Clone project repository
-        run: git clone "https://${{ secrets.ACCESS_TOKEN }}@github.com/vkostyanetsky/kostyanetsky.ru-static.git" --branch master --single-branch project
+      - name: Clone static repository
+        run: git clone "https://${{ secrets.ACCESS_TOKEN }}@github.com/vkostyanetsky/kostyanetsky.ru-static.git" --branch master --single-branch static
+
+      - name: Clone skin repository
+        run: git clone "https://${{ secrets.ACCESS_TOKEN }}@github.com/vkostyanetsky/kostyanetsky.xx-skin.git" --branch master --single-branch skin
 
       - name: Generate static pages
-        run: python builder/builder.py --input . --output project --config config.yaml
+        run: python bloget/__main__.py build --output=static --skin=skin --url=https://kostyanetsky.
+        working-directory: static
 
       - name: Set git config and add changes
         run: |
           git config --global user.email "${GITHUB_ACTOR}@https://users.noreply.github.com/"
           git config --global user.name "${GITHUB_ACTOR}"
           git add --all        
-        working-directory: project
+        working-directory: static
         
       - name: Push and send notification
         run: |
