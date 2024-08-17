@@ -4,7 +4,7 @@
 
 ![Пример](callout.jpg)
 
-Скрипт написан для плагина [Dataview](https://github.com/blacksmithgu/obsidian-dataview), потому что я его и так использую для других задач. Вообще можно легко переделать его для [Templater](https://github.com/SilentVoid13/Templater), [CustomJS](https://github.com/saml-dev/obsidian-custom-js) или отдельный плагин накидать (мне, опять-таки, было лень возиться). 
+Скрипт написан для плагина [Dataview](https://github.com/blacksmithgu/obsidian-dataview), потому что я его и так использую для других задач. Можно легко переделать его для [Templater](https://github.com/SilentVoid13/Templater), [CustomJS](https://github.com/saml-dev/obsidian-custom-js) или отдельный плагин накидать (мне, опять-таки, было лень возиться). 
 
 Если будете использовать: 
 
