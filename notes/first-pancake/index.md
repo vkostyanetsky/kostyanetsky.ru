@@ -1,4 +1,4 @@
-﻿Понадобилось по-быстрому наделать картинок для одного пет-проекта. Развернул первое, что под руку попалось — WaifuDiffusion (это такой клон StableDiffusion, но обученный на аниме и манге).
+﻿Понадобилось по-быстрому наделать картинок для одного пет-проекта. Развернул первое, что под руку попалось — [WaifuDiffusion](https://huggingface.co/hakurei/waifu-diffusion) (это такой клон [StableDiffusion](https://huggingface.co/stabilityai/stable-diffusion-3-medium), но обученный на аниме и манге).
 
 Запрос: 
 
