@@ -1,4 +1,4 @@
-﻿Продолжаю осваивать 3D в свободное время. Вот, первая более-менее самостоятельная работа после [курса](https://www.udemy.com/course/blender-environments-megacourse-create-3d-environments/), который недавно закончил.
+﻿Продолжаю осваивать 3D в свободное время. Вот, первая более-менее самостоятельная работа с [курса](https://www.udemy.com/course/blender-environments-megacourse-create-3d-environments/), который недавно закончил.
 
 [![Creepy Graveyard](creepy-graveyard.png)](creepy-graveyard.png)
 
