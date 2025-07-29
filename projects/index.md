@@ -12,8 +12,6 @@
 - оплатить истекающие подписки с помощью банковской карты;
 - скачать выставленные компанией счета и накладные.
 
-[Подробности](/projects/customer-portal/)
-
 ## Веб-интерфейс базы 1С для поставщиков
 
 <span class="f6 link br3 ph3 pv1 mb2 dib blue bg-lightest-blue">FirstBit ERP</span> <span class="f6 link br3 ph3 pv1 mb2 dib blue bg-lightest-blue">1С:Предприятие</span> <span class="f6 link br3 ph3 pv1 mb2 dib blue bg-lightest-blue">Flask</span> <span class="f6 link br3 ph3 pv1 mb2 dib blue bg-lightest-blue">Python</span> <span class="f6 link br3 ph3 pv1 mb2 dib blue bg-lightest-blue">React.js</span> <span class="f6 link br3 ph3 pv1 mb2 dib blue bg-lightest-blue">Typescript</span>
