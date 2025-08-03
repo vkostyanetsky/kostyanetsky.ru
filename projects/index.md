@@ -2,6 +2,24 @@
 
 Сортировка — по времени, от новых к старым.
 
+## Интеграция между FirstBit ERP и Telegram
+
+Теперь в ERP можно создавать Telegram-ботов, которые умеют рассылать сообщения в личные и групповые чаты, а также получать сообщения и отвечать на них.
+
+Входящие сообщения они могут получать тремя путями:
+
+- через проверку время от времени, по расписанию;
+- через постоянный опрос на новые сообщения;
+- через веб-хук.
+
+Боты в состоянии опознать пользователя Telegram как сотрудника компании тремя способами:
+
+- по заранее указанному для сотрудника имена пользователя Telegram;
+- если сотрудник перешел по специально созданной для него администратором уникальный ссылки;
+- через двухфакторную аутентификацию (пишешь боту, он спрашивает e-mail и отправляет туда OTP, который надо ввести).
+
+Кроме того, подсистема оповещений в нашей ERP теперь тоже может рассылать уведомления через Telegram-ботов.
+
 ## Клиентский портал
 
 <span class="f6 link br3 ph3 pv1 mb2 dib blue bg-lightest-blue">FirstBit ERP</span> <span class="f6 link br3 ph3 pv1 mb2 dib blue bg-lightest-blue">1С:Предприятие</span> <span class="f6 link br3 ph3 pv1 mb2 dib blue bg-lightest-blue">1С:Шина</span> <span class="f6 link br3 ph3 pv1 mb2 dib blue bg-lightest-blue">RabbitMQ</span> <span class="f6 link br3 ph3 pv1 mb2 dib blue bg-lightest-blue">FastAPI</span> <span class="f6 link br3 ph3 pv1 mb2 dib blue bg-lightest-blue">Python</span> <span class="f6 link br3 ph3 pv1 mb2 dib blue bg-lightest-blue">React.js</span> <span class="f6 link br3 ph3 pv1 mb2 dib blue bg-lightest-blue">Typescript</span>
