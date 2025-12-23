@@ -1,4 +1,6 @@
-﻿![Thank you, Mario!](mario.jpg) ![Awaiting Signal](mothership.jpg)
+﻿![Thank you, Mario!](mario.jpg)
+
+![Awaiting Signal](mothership.jpg)
 
 Пара пасхалок, которые можно найти внутри FirstBit ERP. Спрятаны для разработчиков: пользователи в первом случае видят на форме заголовок и текст оповещения, а во втором — стандартное waiting for connection.
 
