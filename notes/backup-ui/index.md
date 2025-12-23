@@ -12,5 +12,7 @@
 
 Ну и продолжаем хохмить в интерфейсе, конечно.
 
-![But Still!](but-still.png) ![Coffee First!](coffee-first.png)
+![But Still!](but-still.png)
+
+![Coffee First!](coffee-first.png)
 
