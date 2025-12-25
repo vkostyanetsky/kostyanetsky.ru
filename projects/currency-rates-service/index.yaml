@@ -1,0 +1,12 @@
+﻿title:          "Сервис курсов валют"
+description:    "Набор приложений, собирающих курсы обмена валют в ОАЭ и Саудовской Аравии."
+created:        2022-07-16 00:00:00
+stacks:
+    - python
+    - fastapi
+    - mongodb
+    - telegram
+    - 1c-v8
+    - fb-erp
+options:
+    - no-rss
