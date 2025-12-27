@@ -2,75 +2,54 @@ name: Build & Deploy
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   pull_request:
   workflow_dispatch:
 
 jobs:
-  build_deploy:
+  
+  build:
+    
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout content repo
-        uses: actions/checkout@v4
-
-      - name: Checkout Bloget
-        uses: actions/checkout@v4
-        with:
-          repository: vkostyanetsky/Bloget
-          ref: main
-          path: bloget
-          token: ${{ secrets.ACCESS_TOKEN || github.token }}
-
+    steps:      
+      - uses: actions/checkout@v2
+      
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v1
         with:
-          python-version: "3.11"
-          cache: "pip"
-          cache-dependency-path: bloget/requirements.txt
+          python-version: 3.11
 
-      - name: Install Bloget deps + Bloget
-        working-directory: bloget
+      - name: Clone bloget repository
+        run: git clone "https://${{ secrets.ACCESS_TOKEN }}@github.com/vkostyanetsky/Bloget.git" --branch main --single-branch bloget
+
+      - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install -e .
+          pip install -r bloget/requirements.txt
 
-      - name: Generate site
+      - name: Clone static repository
+        run: git clone "https://${{ secrets.ACCESS_TOKEN }}@github.com/vkostyanetsky/kostyanetsky.ru-static.git" --branch master --single-branch static
+
+      - name: Install bloget
+        run: pip install -e .
+        working-directory: bloget
+
+      - name: Generate static pages
+        run: bloget build --url=https://kostyanetsky.ru --templates=bloget/templates --assets=bloget/assets --output=static
+
+      - name: Set git config and add changes
         run: |
-          rm -rf build_output
-          bloget build \
-            --url=https://kostyanetsky.ru \
-            --templates=bloget/templates \
-            --assets=bloget/assets \
-            --output=build_output
-
-      - name: Checkout static repo
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
-        uses: actions/checkout@v4
-        with:
-          repository: vkostyanetsky/kostyanetsky.ru-static
-          ref: master
-          path: static
-          token: ${{ secrets.ACCESS_TOKEN }}
-
-      - name: Sync generated site into static repo
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
-        run: |
-          rsync -a --delete --exclude '.git/' build_output/ static/
-
-      - name: Commit & push (only if changed)
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com/"
+          git config --global user.name "${GITHUB_ACTOR}"
+          git add --all        
         working-directory: static
+        
+      - name: Push and send notification
         run: |
-          git config user.email "${GITHUB_ACTOR_ID}+${GITHUB_ACTOR}@users.noreply.github.com"
-          git config user.name "${GITHUB_ACTOR}"
-          git add -A
-
-          if git diff --cached --quiet; then
-            echo "No changes!"
-            exit 0
-          fi
-
-          git commit -m "Update at $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+          COMMIT_MESSAGE="Update at $(date +'%Y-%m-%d %H:%M:%S')"          
+          git diff-index --quiet --cached HEAD -- && echo "No changes!" && exit 0 || echo $COMMIT_MESSAGE
+          git commit -m "${COMMIT_MESSAGE}"
           git push
+        working-directory: static
