@@ -1,0 +1,10 @@
+﻿title:          "Проверка Fatoora SDK"
+description:    "Приложение, контролирующее последнюю версию Fatoora SDK."
+created:        2023-01-01 00:00:00
+stacks:
+    - 1c-v8
+    - python
+    - fastapi
+options:
+    - no-rss
+    - draft

@@ -7,3 +7,4 @@ stacks:
     - telegram
 options:
     - no-rss
+    - draft

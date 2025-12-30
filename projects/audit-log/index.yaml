@@ -6,3 +6,4 @@ stacks:
     - fb-erp
 options:
     - no-rss
+    - draft

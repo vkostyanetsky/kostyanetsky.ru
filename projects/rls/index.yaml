@@ -1,0 +1,9 @@
+﻿title:          "RLS для FirstBit ERP"
+description:    "Ремонт, модернизация и внедрение RLS в конфигурацию."
+created:        2000-01-01 00:00:00
+stacks:
+    - 1c-v8
+    - fb-erp
+options:
+    - no-rss
+    - draft

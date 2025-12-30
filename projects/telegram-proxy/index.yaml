@@ -1,0 +1,11 @@
+﻿title:          "Реверс-прокси Telegram"
+description:    "Прокси-сервис для доставки Telegram сообщений в 1С-приложения клиентов."
+created:        2025-08-27 00:00:00
+stacks:
+    - 1c-v8
+    - python
+    - fastapi
+    - prometheus
+options:
+    - no-rss
+    - draft
