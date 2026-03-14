@@ -1,4 +1,13 @@
-﻿Приведу вариант решения проблемы [неразрешимых ссылок](/notes/unresolved-references), возникший после удаления функциональной опции. Вводная — при проверке конфигурации получаю десятка два сообщений вида:
+---
+title: Неразрешимые ссылки на функциональные опции
+description: Пример решения проблемы неразрешимых ссылок, возникшей после удаления
+  функциональной опции.
+created: 2020-08-19 18:09:13
+tags:
+- 1c
+---
+
+Приведу вариант решения проблемы [неразрешимых ссылок](/notes/unresolved-references), возникший после удаления функциональной опции. Вводная — при проверке конфигурации получаю десятка два сообщений вида:
 
     CommonForm.PersonalSettings.Form Unresolved metadata object references (2)
     Catalog.BankAccounts.Form.GLAccountsEditForm.Form Unresolved metadata object references (1)

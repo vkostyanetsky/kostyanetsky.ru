@@ -1,4 +1,13 @@
-﻿Каждый раз, когда SQL-запрос может запуститься, но ожидает другого ресурса — он записывает сведения о причине задержки. Доступ к ним можно получить через представление [sys.dm_os_wait_stats](https://docs.microsoft.com/ru-ru/sql/relational-databases/system-dynamic-management-views/sys-dm-os-wait-stats-transact-sql).
+---
+title: Задержки сервера MS SQL
+description: Каждый раз, когда запрос SQL может запуститься, но ожидает другого ресурса,
+  он записывает сведения о причине задержки.
+created: 2019-03-08 06:40:05
+tags:
+- mssql
+---
+
+Каждый раз, когда SQL-запрос может запуститься, но ожидает другого ресурса — он записывает сведения о причине задержки. Доступ к ним можно получить через представление [sys.dm_os_wait_stats](https://docs.microsoft.com/ru-ru/sql/relational-databases/system-dynamic-management-views/sys-dm-os-wait-stats-transact-sql).
 
 Для анализа представления можно использовать готовые скрипты:
 

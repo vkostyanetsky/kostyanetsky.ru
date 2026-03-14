@@ -1,4 +1,13 @@
-﻿На днях набросал себе несколько скриптов на PowerShell'е для запуска и остановки служб на рабочем ПК. Наработки в итоге не пригодились, так что зафиксирую себе пару примеров на будущее, чтобы не потерять:
+---
+title: Управление службами через PowerShell
+description: Примеры скриптов на PowerShell для запуска и остановки служб.
+created: 2020-04-28 17:18:10
+tags:
+- powershell
+- workplace
+---
+
+На днях набросал себе несколько скриптов на PowerShell'е для запуска и остановки служб на рабочем ПК. Наработки в итоге не пригодились, так что зафиксирую себе пару примеров на будущее, чтобы не потерять:
 
     get-service -Name 1C:Enterprise* | Where-Object {$_.status -eq 'running'} | stop-service -pass
     get-service -Name *SQL* | Where-Object {$_.status -eq 'running'} | stop-service -pass

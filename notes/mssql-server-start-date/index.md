@@ -1,4 +1,13 @@
-﻿Для чего может пригодиться дата запуска MS SQL Server? Например, мы разбираем задержки в работе СУБД и хотим определить, в течении какого периода времени наполнялась DMV-шка [sys.dm_os_wait_stats](https://docs.microsoft.com/ru-ru/sql/relational-databases/system-dynamic-management-views/sys-dm-os-wait-stats-transact-sql). Её данные (как и любой другой DMV, впрочем) хранятся в оперативной памяти как раз с момента запуска СУБД.
+---
+title: Дата запуска сервера MS SQL
+description: Она может пригодиться, например, при определении периода сбора задержек
+  в работе сервера.
+created: 2019-03-08 07:47:23
+tags:
+- mssql
+---
+
+Для чего может пригодиться дата запуска MS SQL Server? Например, мы разбираем задержки в работе СУБД и хотим определить, в течении какого периода времени наполнялась DMV-шка [sys.dm_os_wait_stats](https://docs.microsoft.com/ru-ru/sql/relational-databases/system-dynamic-management-views/sys-dm-os-wait-stats-transact-sql). Её данные (как и любой другой DMV, впрочем) хранятся в оперативной памяти как раз с момента запуска СУБД.
 
 Дату запуска сервера можно получить из  DMV-шки [sys.dm_os_sys_info](https://docs.microsoft.com/ru-ru/sql/relational-databases/system-dynamic-management-views/sys-dm-os-sys-info-transact-sql):
 

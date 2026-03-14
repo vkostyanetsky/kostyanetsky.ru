@@ -1,4 +1,14 @@
-﻿В MS SQL Server поля DATETIME [не могут](https://docs.microsoft.com/ru-ru/dotnet/api/system.data.sqltypes.sqldatetime.minvalue?view=dotnet-plat-ext-3.1) хранить даты раньше 1753-го года. Например, если попытаться записать в базу 01.01.0001 — получим ругань на out-of-range value. Я считал это забавным для такой почтенной СУБД рудиментом, пока случайно не наткнулся на [причину](https://stackoverflow.com/questions/3310569/what-is-the-significance-of-1-1-1753-in-sql-server).
+---
+title: Смещение дат в 1С
+description: В MS SQL Server поля типа DATETIME не могут хранить даты раньше 1753-го
+  года. Знаете, почему?
+created: 2020-11-10 19:06:41
+tags:
+- 1c
+- mssql
+---
+
+В MS SQL Server поля DATETIME [не могут](https://docs.microsoft.com/ru-ru/dotnet/api/system.data.sqltypes.sqldatetime.minvalue?view=dotnet-plat-ext-3.1) хранить даты раньше 1753-го года. Например, если попытаться записать в базу 01.01.0001 — получим ругань на out-of-range value. Я считал это забавным для такой почтенной СУБД рудиментом, пока случайно не наткнулся на [причину](https://stackoverflow.com/questions/3310569/what-is-the-significance-of-1-1-1753-in-sql-server).
 
 Если вкратце, в 1752-м году Великобритания внедрила у себя Григорианский календарь, и в процессе у них из летосчисления пропало одиннадцать дней. Это породило проблему: вот хочет юзер посчитать разницу в днях между 1653-м и 1753-м годом — что делать будем? Учтем потеряшек? Проигнорируем? Сделаем какие-то хинты или настройки?
 

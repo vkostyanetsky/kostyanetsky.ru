@@ -1,4 +1,12 @@
-﻿Понадобилось по-быстрому наделать картинок для одного пет-проекта. Развернул первое, что под руку попалось — [WaifuDiffusion](https://huggingface.co/hakurei/waifu-diffusion) (это такой клон [StableDiffusion](https://huggingface.co/stabilityai/stable-diffusion-3-medium), но обученный на аниме и манге).
+---
+title: Мой первый подход к генеративкам
+description: Как нейросеть мягко дает тебе понять, что ты пока не умеешь ею пользоваться.
+created: 2024-08-25 14:07:48
+tags:
+- ai
+---
+
+Понадобилось по-быстрому наделать картинок для одного пет-проекта. Развернул первое, что под руку попалось — [WaifuDiffusion](https://huggingface.co/hakurei/waifu-diffusion) (это такой клон [StableDiffusion](https://huggingface.co/stabilityai/stable-diffusion-3-medium), но обученный на аниме и манге).
 
 Запрос: 
 

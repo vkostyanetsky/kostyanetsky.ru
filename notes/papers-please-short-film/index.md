@@ -1,4 +1,12 @@
-﻿https://youtu.be/YFHHGETsxkE
+---
+title: Ваши документы
+description: Крутая экранизация «Papers, Please», даром что на десять минут.
+created: 2018-03-01 18:51:09
+tags:
+- videogames
+---
+
+https://youtu.be/YFHHGETsxkE
 
 Крутая экранизация «[Papers, Please](https://store.steampowered.com/app/239030/Papers_Please/)», даром что на десять минут. Савочкин здорово сыграл, да и остальные не подкачали, включая сценариста. Запихнуть в такой хронометраж драму и сюжетный твист — это надо уметь.
 

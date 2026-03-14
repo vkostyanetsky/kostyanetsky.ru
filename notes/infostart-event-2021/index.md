@@ -1,4 +1,14 @@
-﻿На прошлой неделе сгонял в Москву на [Infostart Event 2021](https://event.infostart.ru/2021_msk/):
+---
+title: Infostart Event 2021
+description: Короткая заметка по поводу прошедшей конференции.
+created: 2021-11-16 23:40:48
+tags:
+- 1c
+- done
+- pgsql
+---
+
+На прошлой неделе сгонял в Москву на [Infostart Event 2021](https://event.infostart.ru/2021_msk/):
 
 - Послушать дюжину докладов о разработке и близких темах — check;
 - Развиртуализоваться с несколькими классными людьми — check;

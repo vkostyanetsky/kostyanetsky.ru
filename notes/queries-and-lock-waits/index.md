@@ -1,4 +1,15 @@
-﻿Набросал ещё два скрипта для анализа ТЖ: [первый](https://github.com/vkostyanetsky/ScriptsFor1C/blob/master/Технологический%20журнал/LongestQueries.sh) строит топ тяжелых запросов к MS SQL, [второй](https://github.com/vkostyanetsky/ScriptsFor1C/blob/master/Технологический%20журнал/LongestLockWaitsByRegions.sh) — топ длительных ожиданий на блокировках.
+---
+title: Запросы и ожидания на блокировках
+description: 'Набросал ещё два скрипта для анализа ТЖ: первый строит топ запросов
+  к MS SQL, второй — топ ожиданий на блокировках.'
+created: 2020-10-19 06:23:06
+tags:
+- 1c
+- bash
+- done
+---
+
+Набросал ещё два скрипта для анализа ТЖ: [первый](https://github.com/vkostyanetsky/ScriptsFor1C/blob/master/Технологический%20журнал/LongestQueries.sh) строит топ тяжелых запросов к MS SQL, [второй](https://github.com/vkostyanetsky/ScriptsFor1C/blob/master/Технологический%20журнал/LongestLockWaitsByRegions.sh) — топ длительных ожиданий на блокировках.
 
 Тяжелые запросы определяются по продолжительности событий DBMSSQL. То есть, чем дольше выполнялся запрос — тем вероятнее, что в процессе он слопал кучу ресурсов. Обычно это так и есть, хотя для нормальной диагностики нужно смотреть трассировку.
 

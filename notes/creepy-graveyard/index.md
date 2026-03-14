@@ -1,4 +1,13 @@
-﻿Продолжаю осваивать 3D в свободное время. Вот, первая более-менее самостоятельная работа с [курса](https://www.udemy.com/course/blender-environments-megacourse-create-3d-environments/), который недавно закончил.
+---
+title: Жуткое кладбище
+description: Моя первая более или менее самостоятельная работа в 3D.
+created: 2024-11-26 23:23:48
+tags:
+- 3d
+- done
+---
+
+Продолжаю осваивать 3D в свободное время. Вот, первая более-менее самостоятельная работа с [курса](https://www.udemy.com/course/blender-environments-megacourse-create-3d-environments/), который недавно закончил.
 
 [![Creepy Graveyard](creepy-graveyard.png)](creepy-graveyard.png)
 

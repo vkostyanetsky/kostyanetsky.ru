@@ -1,4 +1,13 @@
-﻿На днях прикручивал работу с куками к одному из своих скриптов. Пока искал оптимальное решение, наткнулся на совершенно очаровательный (при этом, кстати, 100% рабочий) [совет](https://stackoverflow.com/questions/13030095/how-to-save-requests-python-cookies-to-a-file) со StackOverflow:
+---
+title: Баночка с печеньем
+description: Пара слов о подходах к консервации и хранению кондитерских продуктов
+  в Python'е.
+created: 2022-05-28 21:34:38
+tags:
+- python
+---
+
+На днях прикручивал работу с куками к одному из своих скриптов. Пока искал оптимальное решение, наткнулся на совершенно очаровательный (при этом, кстати, 100% рабочий) [совет](https://stackoverflow.com/questions/13030095/how-to-save-requests-python-cookies-to-a-file) со StackOverflow:
 
 > You can get a CookieJar object from the session with session.cookies, and use pickle to store it to a file.
 

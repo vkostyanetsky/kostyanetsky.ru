@@ -1,1 +1,12 @@
-﻿
+---
+title: Утилита слияния форумов
+description: Скрипт, объединяющий два форума на базе платформы IP.Board в один.
+created: 2006-01-18 00:00:00
+stacks:
+- php
+- ipb
+options:
+- no-rss
+- draft
+---
+
