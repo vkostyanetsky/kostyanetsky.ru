@@ -1,5 +1,0 @@
-﻿title:          "Халк удалять!"
-description:    "Смешная деталь: начиная с 10-й версии PostgreSQL, папка pg_xlog переименована в pg_wal, а pg_clog — в pg_xact."
-created:        2020-11-09 16:03:07
-tags:
-    - pgsql
