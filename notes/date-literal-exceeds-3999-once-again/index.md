@@ -4,6 +4,7 @@ description: 'Скрипты для поиска некорректных дат
 created: 2026-03-28 19:42:53
 tags:
 - 1c
+- work
 - mssql
 - pgsql
 ---
