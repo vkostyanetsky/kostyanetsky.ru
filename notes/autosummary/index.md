@@ -36,7 +36,7 @@ pip install openai-whisper
 Пример вызова:
 
 <pre>
-whisper "D:\audio.wav" --model medium --language Russian --output_format txt
+whisper "D:\audio.wav" --model small --language Russian --output_format txt
 </pre>
 
 На выходе получится текстовый файл с расшифровкой, который можно запихать в любой чатбот и получить вполне связное саммари. Его, конечно, всё ещё нужно вычитать — убрать ошибки и фантазии, что-то переформулировать — но это всё ещё сильно лучше создания конспекта на ходу.
