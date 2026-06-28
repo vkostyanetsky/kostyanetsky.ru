@@ -4,6 +4,7 @@ description: 'Отличная книга про мрачные перспект
 created: 2026-06-28 22:00:00
 tags:
 - ai
+- books
 ---
 
 В Corpus вышла на русском языке книга «[Если кто-то его создаст — все погибнут](https://www.corpus.ru/products/ehliezer-yudkovskij-esli-kto-to-ego-sozdast-vse-pogibnut.htm)» Элиезера Юдковского и Нейта Соареса. Оба — известные исследователи в области безопасности ИИ, AI alignment и рисков сверхинтеллекта.
