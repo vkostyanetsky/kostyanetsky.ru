@@ -2,7 +2,7 @@
 title: Сайт Влада
 description: Привет! Меня зовут Влад. Я — разработчик приложений для бизнеса.
 created: 2018-04-10 00:00:00
-tags: null
+tags:
 options:
 - no-rss
 ---
