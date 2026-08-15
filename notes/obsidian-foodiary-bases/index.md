@@ -1,6 +1,6 @@
 ---
 title: Дневник питания в Obsidian Bases
-description: Написал расчета калорийность еды с помощью Obsidian Bases
+description: Написал калькулятор калорийности еды с помощью Obsidian Bases.
 created: 2025-11-23 00:01:58
 tags:
 - done
@@ -13,4 +13,4 @@ tags:
 
 ![UI](base.png)
 
-Все необходимые настройки и скрипты — в [репозитории](https://github.com/vkostyanetsky/ObsidianFoodiaryBases) на Github'е; инструкция [переведена](https://github.com/vkostyanetsky/ObsidianFoodiaryBases/blob/main/README.ru.md) на русский язык.
+Все необходимые настройки и скрипты — в [репозитории](https://github.com/vkostyanetsky/ObsidianTemplates/tree/main/Foodiary) на Github'е; инструкция [переведена](https://github.com/vkostyanetsky/ObsidianTemplates/blob/main/Foodiary/README.ru.md) на русский язык.
