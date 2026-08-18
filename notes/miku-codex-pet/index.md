@@ -11,7 +11,7 @@ tags:
 
 Фича не особенно полезная, но забавная. Правда, встроенные питомцы мне не зашли; полез смотреть работы сообщества и внезапно на ровном месте разогнался сделать своего — на базе дизайна Хацуне Мику из [Miku'n POP](https://chaim-videogames.itch.io/mikun-pop), старого-престарого платформера.
 
-Оказалось, не особенно сложно. Спрайты я взял из [MikuPet](https://github.com/CharlesWiiFlowers/MikuPet) (автор использует тот же дизайн из Miku'n POP). Сам формат питомца довольно логичный, да и благодаря тому же Codex копаться в нём особо не пришлось. Дольше [разбирался](https://github.com/vkostyanetsky/MikuCodexPet/blob/main/ATTRIBUTION.ru.md), кому там принадлежит арт, на каких условиях его можно переиспользовать и так далее.
+Оказалось, не особенно сложно. Спрайты я взял из [MikuPet](https://github.com/CharlesWiiFlowers/MikuPet) (автор использует тот же дизайн из Miku'n POP), а формат самого питомца довольно понятный (да и благодаря тому же Codex копаться в нём особо не пришлось). Дольше [разбирался](https://github.com/vkostyanetsky/MikuCodexPet/blob/main/ATTRIBUTION.ru.md), чей там арт, на каких условиях его можно переиспользовать и так далее.
 
 Питомца можно [скачать](https://github.com/vkostyanetsky/MikuCodexPet/releases) с GitHub, там же скриншот и [подробные описания](https://github.com/vkostyanetsky/MikuCodexPet) того, что внутри барабанчика.
 
