@@ -4,7 +4,7 @@ description: Набросал плагин для учета интерваль�
 created: 2024-02-13 01:08:58
 tags:
 - done
-- typescript
+- javascript
 - obsidian
 ---
 

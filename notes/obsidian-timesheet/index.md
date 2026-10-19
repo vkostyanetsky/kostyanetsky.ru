@@ -4,7 +4,7 @@ description: Написал плагин для генерации отчета 
 created: 2024-05-12 17:50:58
 tags:
 - done
-- typescript
+- javascript
 - obsidian
 - work
 ---

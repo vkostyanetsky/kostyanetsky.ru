@@ -4,7 +4,7 @@ description: Написал плагин для расчета калорийн�
 created: 2024-04-14 22:36:58
 tags:
 - done
-- typescript
+- javascript
 - obsidian
 ---
 
