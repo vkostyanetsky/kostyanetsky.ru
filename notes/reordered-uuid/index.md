@@ -4,6 +4,8 @@ description: Как 1С хранит UUID в базе данных и при ч�
 created: 2026-10-17 19:24:11
 tags:
 - 1c
+- mssql
+- pgsql
 - optimization
 ---
 
