@@ -5,7 +5,6 @@ description: В середине прошлого года я загорелся
 created: 2020-07-21 20:01:10
 tags:
 - blog
-- nodejs
 - done
 - javascript
 ---

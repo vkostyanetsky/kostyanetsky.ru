@@ -4,7 +4,7 @@ description: Немного доработал плагин для Obsidian, к�
 created: 2026-07-26 12:37:00
 tags:
 - obsidian
-- nodejs
+- javascript
 ---
 
 Спонтанно вернулся к своему старому [плагину для Obsidian](https://github.com/vkostyanetsky/ObsidianTimesheet), который по daily notes за какой-то день выдаёт список задач и время, потраченное на каждую.
