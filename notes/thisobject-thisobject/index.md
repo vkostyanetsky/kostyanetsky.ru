@@ -5,7 +5,6 @@ description: Когда у меня сгорает задница от како�
 created: 2020-07-24 10:47:34
 tags:
 - 1c
-- webdev
 - javascript
 ---
 

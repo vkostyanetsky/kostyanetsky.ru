@@ -5,7 +5,6 @@ description: Я веду этот сайт на русском языке, но 
 created: 2019-06-25 14:29:28
 tags:
 - blog
-- webdev
 - done
 ---
 
